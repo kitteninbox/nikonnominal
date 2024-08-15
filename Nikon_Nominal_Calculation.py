@@ -4,6 +4,19 @@ import streamlit as st
 import base64
 import math
 
+css = """
+<style>
+#GithubIcon {
+    visibility: hidden;
+}
+</style>
+"""
+
+st.markdown(
+    css,
+    unsafe_allow_html=True
+)
+
 # Create a function that faciitate file download
 def download_link(object_to_download, download_filename, download_link_text):
     if isinstance(object_to_download,pd.DataFrame):
