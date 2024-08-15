@@ -31,7 +31,7 @@ def download_link(object_to_download, download_filename, download_link_text):
 def main():
 
     st.title('Nikon Nominal Values Calculation App')
-    st.markdown('Created by Yue Hang')
+    st.title('Created by Yue Hang')
 
     ## Input die-to-die Row (Y) and Col (X) pitches
     # For ZPS268
