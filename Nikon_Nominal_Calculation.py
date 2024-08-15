@@ -4,7 +4,18 @@ import streamlit as st
 import base64
 import math
 
+css = """
+<style>
+[data-testid="stToolbar"] {
+    visibility: hidden;
+}
+</style>
+"""
 
+st.markdown(
+    css,
+    unsafe_allow_html=True
+)
 
 # Create a function that faciitate file download
 def download_link(object_to_download, download_filename, download_link_text):
@@ -19,18 +30,7 @@ def download_link(object_to_download, download_filename, download_link_text):
 # Create a function to process the data
 def main():
 
-    css = """
-    <style>
-    [data-testid="stToolbar"] {
-        visibility: hidden;
-    }
-    </style>
-    """
     
-    st.markdown(
-        css,
-        unsafe_allow_html=True
-    )
 
     st.title('Nikon Nominal Values Calculation App')
     st.title('Created by Yue Hang')
