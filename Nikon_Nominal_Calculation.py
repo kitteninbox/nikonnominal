@@ -30,26 +30,24 @@ def download_link(object_to_download, download_filename, download_link_text):
 # Create a function to process the data
 def main():
 
-    
-
     st.title('Nikon Nominal Values Calculation App')
-    st.title('Created by Yue Hang')
+    st.markdown('Created by Yue Hang')
 
     ## Input die-to-die Row (Y) and Col (X) pitches
     # For ZPS268
-    row_y_pitch = st.number_input('Enter Row (Y) Pitch', value=2660)
     col_x_pitch = st.number_input('Enter Column (X) Pitch', value=2660)
-
+    row_y_pitch = st.number_input('Enter Row (Y) Pitch', value=2660)
+    
     ## Measured X and Y distance from subpanel center in AutoCAD to the PACKAGE center (+ve and -ve signs are needed!)
     # For ZPS268
-    package_row_y = st.number_input('Distance of Subpanel Center to First Package (Y)', value=140980)
     package_col_x = st.number_input('Distance of Subpanel Center to First Package (X)', value=-140980)
-
+    package_row_y = st.number_input('Distance of Subpanel Center to First Package (Y)', value=140980)
+    
     ## Die offset in the center of the package (+ve and -ve signs are needed!)
     # For ZPS268
-    die_row_y = st.number_input('Die Position Offset Within the Package (Y)', value=-180.6)
     die_col_x = st.number_input('Die Position Offset Within the Package (X)', value=-15.3)
-
+    die_row_y = st.number_input('Die Position Offset Within the Package (Y)', value=-180.6)
+    
     ## FINAL X and Y
     first_row_y = package_row_y + die_row_y
     first_col_x = package_col_x + die_col_x
