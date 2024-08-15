@@ -6,7 +6,7 @@ import math
 
 css = """
 <style>
-#GithubIcon {
+[data-testid="stToolbar"] {
     visibility: hidden;
 }
 </style>
