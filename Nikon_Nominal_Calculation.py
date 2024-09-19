@@ -40,8 +40,8 @@ def main():
     
     ## Measured X and Y distance from subpanel center in AutoCAD to the PACKAGE center (+ve and -ve signs are needed!)
     # For ZPS268
-    package_col_x = st.number_input('Distance of Subpanel Center to First Package (X)', value=-140980.00, step=0.01)
-    package_row_y = st.number_input('Distance of Subpanel Center to First Package (Y)', value=140980.00, step=0.01)
+    package_col_x = st.number_input('Distance from Subpanel Center to First Package (X)', value=-140980.00, step=0.01)
+    package_row_y = st.number_input('Distance from Subpanel Center to First Package (Y)', value=140980.00, step=0.01)
     
     ## Die offset in the center of the package (+ve and -ve signs are needed!)
     # For ZPS268
