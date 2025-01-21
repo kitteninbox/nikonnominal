@@ -35,13 +35,13 @@ def main():
 
     ## Input die-to-die Row (Y) and Col (X) pitches
     # For ZPS268
-    col_x_pitch = st.number_input('Enter Column (X) Pitch', value=2660.00, step=0.01)
-    row_y_pitch = st.number_input('Enter Row (Y) Pitch', value=2660.00, step=0.01)
+    col_x_pitch = st.number_input('Enter the Column (X) Pitch', value=2660.00, step=0.01)
+    row_y_pitch = st.number_input('Enter the Row (Y) Pitch', value=2660.00, step=0.01)
     
     ## Measured X and Y distance from subpanel center in AutoCAD to the PACKAGE center (+ve and -ve signs are needed!)
     # For ZPS268
-    package_col_x = st.number_input('Distance from Subpanel Center to First Package (X)', value=-140980.00, step=0.01)
-    package_row_y = st.number_input('Distance from Subpanel Center to First Package (Y)', value=140980.00, step=0.01)
+    package_col_x = st.number_input('Distance from the Subpanel Center to the First Package (X)', value=-140980.00, step=0.01)
+    package_row_y = st.number_input('Distance from the Subpanel Center to the First Package (Y)', value=140980.00, step=0.01)
     
     ## Die offset in the center of the package (+ve and -ve signs are needed!)
     # For ZPS268
